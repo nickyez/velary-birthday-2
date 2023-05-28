@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background: #E5E5E5;
-  background-image: url("bg.jpg");
+  background: #9376E0;
+  /* background-image: url("bg.jpg"); */
 }
 
 #card-front {
@@ -62,9 +64,10 @@ body {
   text-align: center;
   font-family: 'Lobster', cursive;
   font-style: italic;
-  font-size: 70px;
-  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15), 1px 1px 0 #ffc8c8, 2px 2px 0 #ff9696, 3px 3px 0 #ff7d7d;
+  font-size: 45px;
+  /* text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15), 1px 1px 0 #ffc8c8, 2px 2px 0 #ff9696, 3px 3px 0 #ff7d7d; */
   color: #FFF;
+  animation-duration: 3s;
 }
 
 #card-inside {
@@ -92,8 +95,8 @@ font-family: 'Indie Flower', cursive;
 
 #card-front {
   background-color: #ee9ca7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF5555), to(#FF7777));
-  background-image: linear-gradient(top, #FF5555 0%, #FF7777 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E893CF), to(#F3BCC8));
+  background-image: linear-gradient(top, #E893CF 0%, #F3BCC8 100%);
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: -webkit-transform 1s linear;
@@ -130,7 +133,7 @@ font-family: 'Indie Flower', cursive;
   position: absolute;
   bottom: 1em;
   right: -12px;
-  background: #F44;
+  background: #FEFF86;
   color: #FFF;
   font-family: 'Lobster', cursive;
   font-style: italic;
@@ -145,7 +148,7 @@ font-family: 'Indie Flower', cursive;
 
 #card-front button:hover,
 #card-front button:focus {
-  background: #F22;
+  background: #cfcf6b;
 }
 
 #close {
@@ -425,5 +428,21 @@ font-family: 'Lobster', cursive;
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #card, #card-front, #card-inside {
+    height: 80%;
+  }
+  #card {
+    width: 95%;
+    margin: auto;
+  }
+  #card-inside {
+    font-size: 1em;
+  }
+  #card h1 {
+    font-size: 2.5em;
   }
 }
